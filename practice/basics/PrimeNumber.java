@@ -129,7 +129,7 @@ public class PrimeNumber {
         return primes;
     }
     static void segmentedSieve(int l, int r) {
-        int limit = (int) (Math.floor(Math.sqrt(r)) + 1);
+        int limit = (int) Math.sqrt(r) + 1;
         List<Integer> primes = simpleSieve(limit);
 
         boolean[] arePrimes = new boolean[r - l + 1];
